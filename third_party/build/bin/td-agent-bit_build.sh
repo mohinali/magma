@@ -14,12 +14,6 @@
 set -e
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 source "$SCRIPT_DIR/../lib/util.sh"
-# Ensure this script has execute permissions
-chmod +x "$SCRIPT_DIR/td-agent-bit_build.sh"
-
-# Ensure necessary permissions on directories
-chmod +x "$SCRIPT_DIR/../bin"
-chmod +x /tmp
 
 PKGNAME=td-agent-bit
 WORK_DIR=/tmp/build-${PKGNAME}
